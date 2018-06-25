@@ -1,0 +1,59 @@
+@keyframes bigger {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+@keyframes bigger-white {
+    from {transform: scale(0);}
+    to {transform: scale(1.01);}
+}
+
+* {
+    margin: 0;padding: 0;
+}
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+#frame {
+    position: absolute;
+    width: 1000px;height: 500px;
+    border: solid 5px skyblue;
+    top: calc(50% - 250px);
+    left: calc(50% - 500px);
+    
+}
+.out-circle {
+    position: absolute;
+    width: 50px;height: 50px;
+    transform: scale(0);
+    border-radius: 50%;
+    background-color: #9bdeff;
+}
+.out-circle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;height: 50px;
+    transform: scale(0);
+    border-radius: 50%;
+    background-color: #fff; 
+    // border: 1px solid #000;
+}
+@for $i from 1 through 11 {
+    .out-circle:nth-child(#{$i}) {
+        position: absolute;
+        // top: $i * 50px - 50px;
+        // left: $i * 100px - 100px;
+        top: $i*20+20px !important;
+        left: $i*20+20px !important;
+        animation: 
+            bigger 0.3s ease $i * 0.1s forwards;
+        z-index: 3;
+    }
+    .out-circle:nth-child(#{$i})::after {
+        animation:
+            bigger 0.3s ease $i * 0.1 + 0.2s forwards;
+        z-index:2;
+    }
+    
+}
+

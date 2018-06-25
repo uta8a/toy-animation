@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+#frame {
+  position: absolute;
+  width: 1000px;
+  height: 500px;
+  border: solid 5px skyblue;
+  top: calc(50% - 250px);
+  left: calc(50% - 500px);
+  background-color: #72D4F2; }
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: scale(0);
+  border-radius: 50%;
+  border: 3px solid blue; }
+
+.circle:nth-child(1) {
+  position: absolute; }
+
+.circle:nth-child(2) {
+  position: absolute; }
+
+.circle:nth-child(3) {
+  position: absolute; }
+
+.circle:nth-child(4) {
+  position: absolute; }
+
+.circle:nth-child(5) {
+  position: absolute; }
+
+.circle:nth-child(6) {
+  position: absolute; }
+
+.circle:nth-child(7) {
+  position: absolute; }
+
+.circle:nth-child(8) {
+  position: absolute; }
+
+.circle:nth-child(9) {
+  position: absolute; }
+
+.circle:nth-child(10) {
+  position: absolute; }
+
+.circle:nth-child(11) {
+  position: absolute; }
+
+.circle:nth-child(1) {
+  top: calc(50% - 25px - 140px);
+  left: calc(50% - 25px - 380px);
+  animation: bigger 0.2s ease 0.2s 3, vanish 0.2s ease 0.4s 3; }
+
+.circle:nth-child(2) {
+  top: calc(50% - 25px - 80px);
+  left: calc(50% - 25px - 100px);
+  animation: bigger 0.2s ease 0.1s 3, vanish 0.2s ease 0.3s 3; }
+
+.circle:nth-child(3) {
+  top: calc(50% - 25px - 5px);
+  left: calc(50% - 25px - 300px);
+  animation: bigger 0.2s ease 0.3s 3, vanish 0.2s ease 0.5s 3; }
+
+.circle:nth-child(4) {
+  top: calc(50% - 25px + 130px);
+  left: calc(50% - 25px - 400px);
+  animation: bigger 0.2s ease 0.4s 3, vanish 0.2s ease 0.6s 3; }
+
+.circle:nth-child(5) {
+  top: calc(50% - 25px + 100px);
+  left: calc(50% - 25px - 200px);
+  animation: bigger 0.2s ease 0.5s 3, vanish 0.2s ease 0.7s 3; }
+
+.circle:nth-child(6) {
+  top: calc(50% - 25px - 120px);
+  left: calc(50% - 25px + 100px);
+  animation: bigger 0.2s ease 0.6s 3, vanish 0.2s ease 0.8s 3; }
+
+.circle:nth-child(7) {
+  top: calc(50% - 25px - 130px);
+  left: calc(50% - 25px + 390px);
+  animation: bigger 0.2s ease 0.5s 3, vanish 0.2s ease 0.7s 3; }
+
+.circle:nth-child(8) {
+  top: calc(50% - 25px - 10px);
+  left: calc(50% - 25px + 260px);
+  animation: bigger 0.2s ease 0.4s 3, vanish 0.2s ease 0.6s 3; }
+
+.circle:nth-child(9) {
+  top: calc(50% - 25px + 50px);
+  left: calc(50% - 25px + 110px);
+  animation: bigger 0.2s ease 0.3s 3, vanish 0.2s ease 0.5s 3; }
+
+.circle:nth-child(10) {
+  top: calc(50% - 25px + 100px);
+  left: calc(50% - 25px + 390px);
+  animation: bigger 0.2s ease 0.4s 3, vanish 0.2s ease 0.6s 3; }
+
+#frame {
+  animation: rounder 0.2s ease 2.4s forwards, vanish 0.2s ease 2.4s forwards; }
+
+@keyframes bigger {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+@keyframes rounder {
+  from {
+    border-radius: 0%; }
+  to {
+    border-radius: 50%; } }
+@keyframes vanish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kosen</title>
+    <style>
+        * {
+            margin: 0;padding: 0;
+        }
+        .images {
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 290px);
+            width: 580px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .image {
+            position: absolute;
+            top: 0;left: 0;
+            width: 100%;height: 100%;
+            
+        }
+        .image:nth-child(1) {
+            position: absolute;
+            width: 100%;height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../images/day.png);
+        }
+        .image:nth-child(2) {
+            width: 100%;height: 100%;
+            content: '';
+            display: block;
+            background-color: #282828;
+            /* opacity: 0; */
+            top: 100%;
+        }
+ 
+        /* animation */
+        .images {
+            animation: dont-ovh 0s ease 0.8s forwards;
+        }
+        .image:nth-child(1) {
+            animation: fadeout 0s ease 0.8s forwards;
+        }
+        .image:nth-child(2) {
+            animation:
+                slideup 0.3s ease 0.5s forwards,
+                squarer 0.3s ease 0.8s forwards,
+                diamonder 0.3s ease 1.1s forwards,
+                fadeout 0s ease 1.1s forwards,
+                fadein 0s ease 1.15s forwards,
+                fadeout 0s ease 1.25s forwards,
+                fadein 0s ease 1.28s forwards,
+                bigger 0.3s ease 1.4s forwards,
+                in-empty 0.3s ease 1.4s forwards,
+                fadeout 0s ease 1.7s forwards;
+        }
+
+        
+        /* keyframes */
+        @keyframes dont-ovh {
+            from {overflow: hidden;}
+            to {overflow: visible;}
+        }
+        @keyframes fadeout {
+            from {opacity: 1;}
+            to{opacity: 0;}
+        }
+
+        @keyframes fadein {
+            from {opacity: 0;}
+            to{opacity: 1;}
+        }
+
+        @keyframes slideup {
+            from {top: 100%;}
+            to {top: 0%;}
+        }
+
+        @keyframes squarer {
+            from {width: 580px;}
+            to {
+                width: 100px;
+                left: calc(50% - 50px);
+            }
+        }
+        @keyframes diamonder {
+            from {transform: rotate(0);}
+            to {transform: rotate(45deg);}
+        }
+        @keyframes bigger {
+            from {transform: scale(1) rotate(45deg);}
+            to {transform: scale(5) rotate(45deg);}
+        }
+        @keyframes in-empty {
+            from {
+                background-color: #282828;
+            }
+            to {
+                background-color: #fff;
+                border: solid 1px; 
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="images">
+        <div class="image"></div>
+        <div class="image"></div>
+    </div>
+    
+</body>
+</html>

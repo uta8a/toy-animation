@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>mini-robot</title>
+    <style>
+        *,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;padding: 0;
+            overflow: hidden;
+        }
+        #tile-moving {
+            width: 100%;height: 100%;
+            overflow: hidden;
+        }
+        .stage {
+            position: absolute;
+            width: 1000px;height: 500px;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+        .tile {
+            position: absolute;
+			width: 50px;
+			height: 50px;
+			background-color: #999;
+			border: 5px solid #fff;
+        }
+        .tile:nth-child(1) {
+            top: 0;left: 0;
+        }
+        .tile:nth-child(2) {
+            top: 0;left: 50px;
+        }
+        .tile:nth-child(3) {
+            top: 0; left: 100px;
+        }
+        .tile:nth-child(4) {
+            top: 0; left: 150px;
+        }
+        .tile:nth-child(5) {
+            top: 50px;left: 0;
+        }
+        .tile:nth-child(6) {
+            top: 50px;left: 50px;
+        }
+        .tile:nth-child(7) {
+            top: 50px; left: 100px;
+        }
+        .tile:nth-child(8) {
+            top: 50px; left: 150px;
+        }
+        /* Animation */
+        .tile:nth-child(1) {
+            animation:
+                to-right-tile1-1 0.1s ease 0.5s forwards,
+                to-right-tile1-2 0.1s ease 0.6s forwards,
+                to-right-tile1-3 0.1s ease 0.7s forwards,
+                to-right-tile1-4 0.1s ease 0.8s forwards,
+                to-right-tile1-5 0.1s ease 0.9s forwards,
+                to-right-tile1-6 0.1s ease 1.0s forwards;
+                
+        }
+        .tile:nth-child(2) {
+            animation:
+                to-right-tile2-1 0.1s ease 0.5s forwards,
+                to-right-tile2-2 0.1s ease 0.6s forwards,
+                to-right-tile2-3 0.1s ease 0.7s forwards,
+                to-right-tile2-4 0.1s ease 0.8s forwards,
+                to-right-tile2-5 0.1s ease 0.9s forwards,
+                to-right-tile2-6 0.1s ease 1.0s forwards;
+                
+        }
+        .tile:nth-child(3) {
+            animation:
+                to-right-tile3-1 0.1s ease 0.5s forwards,
+                to-right-tile3-2 0.1s ease 0.6s forwards,
+                to-right-tile3-3 0.1s ease 0.7s forwards,
+                to-right-tile3-4 0.1s ease 0.8s forwards,
+                to-right-tile3-5 0.1s ease 0.9s forwards,
+                to-right-tile3-6 0.1s ease 1.0s forwards;
+                
+        }
+        .tile:nth-child(4) {
+            animation:
+                to-right-tile4-1 0.1s ease 0.5s forwards,
+                to-right-tile4-2 0.1s ease 0.6s forwards,
+                to-right-tile4-3 0.1s ease 0.7s forwards,
+                to-right-tile4-4 0.1s ease 0.8s forwards,
+                to-right-tile4-5 0.1s ease 0.9s forwards,
+                to-right-tile4-6 0.1s ease 1.0s forwards;
+                
+        }
+        .tile:nth-child(5) {
+            animation:
+                to-right-tile4-1 0.1s ease 0.5s forwards,
+                to-right-tile4-2 0.1s ease 0.6s forwards,
+                to-right-tile4-3 0.1s ease 0.7s forwards,
+                to-right-tile4-4 0.1s ease 0.8s forwards,
+                to-right-tile4-5 0.1s ease 0.9s forwards,
+                to-right-tile4-6 0.1s ease 1.0s forwards;
+                
+        }
+        .tile:nth-child(6) {
+            animation:
+                to-right-tile3-1 0.1s ease 0.5s forwards,
+                to-right-tile3-2 0.1s ease 0.6s forwards,
+                to-right-tile3-3 0.1s ease 0.7s forwards,
+                to-right-tile3-4 0.1s ease 0.8s forwards,
+                to-right-tile3-5 0.1s ease 0.9s forwards,
+                to-right-tile3-6 0.1s ease 1.0s forwards,
+                eye 0.3s ease 1.1s forwards,
+                eye 0.3s ease 1.4s forwards;
+                
+        }
+        .tile:nth-child(7) {
+            animation:
+                to-right-tile2-1 0.1s ease 0.5s forwards,
+                to-right-tile2-2 0.1s ease 0.6s forwards,
+                to-right-tile2-3 0.1s ease 0.7s forwards,
+                to-right-tile2-4 0.1s ease 0.8s forwards,
+                to-right-tile2-5 0.1s ease 0.9s forwards,
+                to-right-tile2-6 0.1s ease 1.0s forwards,
+                eye 0.3s ease 1.1s forwards,
+                eye 0.3s ease 1.4s forwards;
+                
+        }
+        .tile:nth-child(8) {
+            animation:
+                to-right-tile1-1 0.1s ease 0.5s forwards,
+                to-right-tile1-2 0.1s ease 0.6s forwards,
+                to-right-tile1-3 0.1s ease 0.7s forwards,
+                to-right-tile1-4 0.1s ease 0.8s forwards,
+                to-right-tile1-5 0.1s ease 0.9s forwards,
+                to-right-tile1-6 0.1s ease 1.0s forwards;
+                
+        }
+        /* keyframes */
+        @keyframes to-right-tile1-1 {
+            from {transform: translate(0, 0);}
+            to   {transform: translate(0, 100%);}
+        }
+        @keyframes to-right-tile1-2 {
+            from   {transform: translate(0, 100%);}
+            to {transform: translate(100%, 100%);}
+        }
+        @keyframes to-right-tile1-3 {
+            from {transform: translate(100%, 100%);}
+            to {transform: translate(100%, 0);}
+        }
+        @keyframes to-right-tile1-4 {
+            from {transform: translate(100%, 0);}
+            to {transform: translate(200%, 0);}
+        }
+        @keyframes to-right-tile1-5 {
+            from {transform: translate(200%, 0);}
+            to {transform: translate(200%, 100%);}
+        }
+        @keyframes to-right-tile1-6 {
+            from {transform: translate(200%, 100%);}
+            to  {transform: translate(200%, 200%);}
+        }
+        @keyframes to-right-tile2-1 {
+            from {transform: translate(0, 0);}
+            to   {transform: translate(0, -100%);}
+        }
+        @keyframes to-right-tile2-2 {
+            from   {transform: translate(0, -100%);}
+            to {transform: translate(-100%, -100%);}
+        }
+        @keyframes to-right-tile2-3 {
+            from {transform: translate(-100%, -100%);}
+            to {transform: translate(-100%, 0);}
+        }
+        @keyframes to-right-tile2-4 {
+            from {transform: translate(-100%, 0);}
+            to {transform: translate(-200%, 0);}
+        }
+        @keyframes to-right-tile2-5 {
+            from {transform: translate(-200%, 0);}
+            to {transform: translate(-200%, -100%);}
+        }
+        @keyframes to-right-tile2-6 {
+            from {transform: translate(-200%, -100%);}
+            to  {transform: translate(-200%, -200%);}
+        }
+        @keyframes to-right-tile3-1 {
+            from {transform: translate(0, 0);}
+            to   {transform: translate(100%, 0);}
+        }
+        @keyframes to-right-tile3-2 {
+            from   {transform: translate(100%, 0);}
+            to {transform: translate(100%, -100%);}
+        }
+        @keyframes to-right-tile3-3 {
+            from {transform: translate(100%, -100%);}
+            to {transform: translate(0, -100%);}
+        }
+        @keyframes to-right-tile3-4 {
+            from {transform: translate(0, -100%);}
+            to {transform: translate(0, -200%);}
+        }
+        @keyframes to-right-tile3-5 {
+            from {transform: translate(0, -200%);}
+            to {transform: translate(100%, -200%);}
+        }
+        @keyframes to-right-tile3-6 {
+            from {transform: translate(100%, -200%);}
+            to  {transform: translate(200%, -200%);}
+        }
+        /* tile4 */
+        @keyframes to-right-tile4-1 {
+            from {transform: translate(0, 0);}
+            to   {transform: translate(-100%, 0);}
+        }
+        @keyframes to-right-tile4-2 {
+            from   {transform: translate(-100%, 0);}
+            to {transform: translate(-100%, 100%);}
+        }
+        @keyframes to-right-tile4-3 {
+            from {transform: translate(-100%, 100%);}
+            to {transform: translate(0, 100%);}
+        }
+        @keyframes to-right-tile4-4 {
+            from {transform: translate(0, 100%);}
+            to {transform: translate(0, 200%);}
+        }
+        @keyframes to-right-tile4-5 {
+            from {transform: translate(0, 200%);}
+            to {transform: translate(-100%, 200%);}
+        }
+        @keyframes to-right-tile4-6 {
+            from {transform: translate(-100%, 200%);}
+            to  {transform: translate(-200%, 200%);}
+        }
+        /* eye */
+        @keyframes eye {
+            0% {height: 50px;}
+            50% {height: 0px;}
+            100% {height: 50px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="tile-moving">
+        <div class="stage">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+    </div>
+</body>
+</html>
