@@ -1,7 +1,7 @@
 # toy-animation
 - CSS Animation練習
 
-# メモ
+# デモ
 - fadeout: https://toy-animation-fadeout.glitch.me
 - rainy: https://toy-animation-rainy.glitch.me
 - kosen: https://toy-animation-kosen.glitch.me
