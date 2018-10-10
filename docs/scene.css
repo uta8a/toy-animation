@@ -1,0 +1,874 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+#root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+#scene {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+  #scene .stage-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    #scene .stage-inner .wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+      #scene .stage-inner .wrap .stage-words-0 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d; }
+        #scene .stage-inner .wrap .stage-words-0 .words-0 {
+          position: absolute;
+          width: 271px;
+          height: 45px;
+          top: calc(50% - 22.5px);
+          left: calc(50% - 135.5px); }
+          #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-0-1.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-0-2.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-0-3.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-0-4.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-5 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-0-5.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-6 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-0-6.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+        #scene .stage-inner .wrap .stage-words-0 .words-0-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0; }
+          #scene .stage-inner .wrap .stage-words-0 .words-0-back div {
+            position: absolute;
+            width: 300%;
+            height: 100%;
+            top: 0;
+            left: 0; }
+            #scene .stage-inner .wrap .stage-words-0 .words-0-back div:nth-child(1) {
+              background-image: url(./hsm_ai.jpg);
+              background-position: center;
+              background-size: contain;
+              opacity: 0.4; }
+      #scene .stage-inner .wrap .stage-words-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateZ(100px) scale(0.875) rotate(-20deg); }
+        #scene .stage-inner .wrap .stage-words-1 .words-1 {
+          position: absolute;
+          width: 343px;
+          height: 45px;
+          top: calc(50% - 22.5px);
+          left: calc(50% - 171.5px); }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-1.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-2.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-3.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-4.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-5 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-5.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-6 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-6.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-7 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-7.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-8 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-8.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-9 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-9.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-10 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-10.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-11 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-1-11.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+        #scene .stage-inner .wrap .stage-words-1 .words-1-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-image: url(./hsm-1-0.png);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.2;
+          transform: rotate(40deg);
+          opacity: 0; }
+      #scene .stage-inner .wrap .stage-words-1-after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: translateY(-100%); }
+        #scene .stage-inner .wrap .stage-words-1-after div:nth-child(1) {
+          position: absolute;
+          top: calc(50% - 50px);
+          left: calc(50% - 50px);
+          width: 100px;
+          height: 100px;
+          background-color: #000; }
+        #scene .stage-inner .wrap .stage-words-1-after div:nth-child(2) {
+          position: absolute;
+          top: calc(50% - 50px);
+          left: calc(50% - 50px);
+          width: 100px;
+          height: 100px;
+          transform: scale(0);
+          background-color: #fff; }
+        #scene .stage-inner .wrap .stage-words-1-after div:nth-child(3) {
+          position: absolute;
+          top: calc(50% - 50px);
+          left: calc(50% - 50px);
+          width: 100px;
+          height: 100px;
+          transform: scale(0);
+          background-color: #000; }
+        #scene .stage-inner .wrap .stage-words-1-after div:nth-child(4) {
+          position: absolute;
+          top: calc(50% - 50px);
+          left: calc(50% - 50px);
+          width: 100px;
+          height: 100px;
+          transform: scale(0);
+          background-color: #fff; }
+      #scene .stage-inner .wrap .stage-words-11 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0; }
+        #scene .stage-inner .wrap .stage-words-11 .words-11 {
+          position: absolute;
+          width: 400px;
+          height: 46px;
+          top: calc(50% - 23px);
+          left: calc(50% - 200px); }
+          #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-11-1.png);
+            background-position: center;
+            background-size: cover; }
+          #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-11-2.png);
+            background-position: center;
+            background-size: cover; }
+          #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-11-3.png);
+            background-position: center;
+            background-size: cover; }
+          #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-11-4.png);
+            background-position: center;
+            background-size: cover; }
+          #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-5 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-11-5.png);
+            background-position: center;
+            background-size: cover; }
+          #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-6 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-11-6.png);
+            background-position: center;
+            background-size: cover; }
+          #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-7 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-11-7.png);
+            background-position: center;
+            background-size: cover; }
+          #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-8 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-11-8.png);
+            background-position: center;
+            background-size: cover; }
+        #scene .stage-inner .wrap .stage-words-11 .words-11-back {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform: scale(0.35);
+          background-color: #000; }
+      #scene .stage-inner .wrap .stage-words-11-after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%; }
+        #scene .stage-inner .wrap .stage-words-11-after div:nth-child(1) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          transform: translateY(-100%);
+          background-color: #fff4bf; }
+      #scene .stage-inner .wrap .backslide-12 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; }
+        #scene .stage-inner .wrap .backslide-12 div {
+          position: absolute;
+          width: 100%;
+          height: 50%;
+          top: 0;
+          left: 0; }
+          #scene .stage-inner .wrap .backslide-12 div:nth-child(1) {
+            background-color: blue;
+            opacity: 0.2;
+            transform: translateX(100%); }
+          #scene .stage-inner .wrap .backslide-12 div:nth-child(2) {
+            background-color: green;
+            opacity: 0.2;
+            transform: translateX(100%); }
+          #scene .stage-inner .wrap .backslide-12 div:nth-child(3) {
+            background-color: red;
+            opacity: 0.2;
+            transform: translateX(100%); }
+      #scene .stage-inner .wrap .backslide-13 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; }
+        #scene .stage-inner .wrap .backslide-13 div {
+          position: absolute;
+          width: 100%;
+          height: 50%;
+          top: 50%;
+          left: 0; }
+          #scene .stage-inner .wrap .backslide-13 div:nth-child(1) {
+            background-color: blue;
+            opacity: 0.2;
+            transform: translateX(-100%); }
+          #scene .stage-inner .wrap .backslide-13 div:nth-child(2) {
+            background-color: green;
+            opacity: 0.2;
+            transform: translateX(-100%); }
+          #scene .stage-inner .wrap .backslide-13 div:nth-child(3) {
+            background-color: red;
+            opacity: 0.2;
+            transform: translateX(-100%); }
+      #scene .stage-inner .wrap .stage-words-12 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; }
+        #scene .stage-inner .wrap .stage-words-12 .words-12 {
+          position: absolute;
+          width: 141px;
+          height: 72px;
+          top: calc(50% - 36px);
+          left: calc(50% - 70.5px); }
+          #scene .stage-inner .wrap .stage-words-12 .words-12 .words-12-1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-12-1.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-12 .words-12 .words-12-2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-12-2.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+      #scene .stage-inner .wrap .stage-words-13 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; }
+        #scene .stage-inner .wrap .stage-words-13 .words-13 {
+          position: absolute;
+          width: 87px;
+          height: 59px;
+          top: calc(50% - 29.5px);
+          left: calc(50% - 43.5px); }
+          #scene .stage-inner .wrap .stage-words-13 .words-13 .words-13-1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-13-1.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-13 .words-13 .words-13-2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./hsm-13-2.png);
+            background-position: center;
+            background-size: cover;
+            opacity: 0; }
+      #scene .stage-inner .wrap .circle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; }
+        #scene .stage-inner .wrap .circle div {
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          top: calc(50% - 150px);
+          left: calc(50% - 150px);
+          border-radius: 50%;
+          background-color: #fff;
+          transform: scale(0); }
+      #scene .stage-inner .wrap .words-2 {
+        position: absolute;
+        width: 737px;
+        height: 45px;
+        top: calc(50% - 22.5px);
+        left: calc(50% - 368.5px);
+        background-image: url(./hsm-2-0.png);
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        opacity: 0; }
+      #scene .stage-inner .wrap .words-3 {
+        position: absolute;
+        width: 406px;
+        height: 53px;
+        top: calc(50% - 26.5px - 100px);
+        left: calc(50% - 203px - 100px);
+        background-image: url(./hsm-3-0.png);
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        opacity: 0; }
+      #scene .stage-inner .wrap .words-4 {
+        position: absolute;
+        width: 988px;
+        height: 42px;
+        top: calc(50% - 21px + 100px);
+        left: calc(50% - 494px + 100px);
+        background-image: url(./hsm-4-0.png);
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        opacity: 0; }
+      #scene .stage-inner .wrap .words-5 {
+        position: absolute;
+        width: 551px;
+        height: 45px;
+        top: calc(50% - 22.5px + 100px);
+        left: calc(50% - 275.5px - 100px);
+        background-image: url(./hsm-5-0.png);
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        opacity: 0; }
+      #scene .stage-inner .wrap .words-6 {
+        position: absolute;
+        width: 339px;
+        height: 45px;
+        top: calc(50% - 22.5px - 100px);
+        left: calc(50% - 169.5px + 100px);
+        background-image: url(./hsm-6-0.png);
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        opacity: 0; }
+      #scene .stage-inner .wrap .words-7 {
+        position: absolute;
+        width: 742px;
+        height: 53px;
+        top: calc(50% - 26.5px + 100px);
+        left: calc(50% - 371px + 100px);
+        background-image: url(./hsm-7-0.png);
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        opacity: 0; }
+      #scene .stage-inner .wrap .words-8 {
+        position: absolute;
+        width: 1077px;
+        height: 367px;
+        top: calc(50% - 183.5px - 100px);
+        left: calc(50% - 538.5px - 100px);
+        background-image: url(./hsm-8-0.png);
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        opacity: 0; }
+      #scene .stage-inner .wrap .min {
+        position: absolute;
+        width: 245px;
+        height: 54px;
+        top: calc(50% - 27px);
+        left: calc(50% - 122.5px);
+        background-image: url(./hsm-10-0.png);
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        opacity: 0; }
+      #scene .stage-inner .wrap .stage-words-end {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%; }
+        #scene .stage-inner .wrap .stage-words-end .edit {
+          position: absolute;
+          width: 90%;
+          height: 100%;
+          top: -15%;
+          left: 5%;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          transform: scale(0.5); }
+          #scene .stage-inner .wrap .stage-words-end .edit:nth-child(1) {
+            background-image: url(./hsm-9-1.png);
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-end .edit:nth-child(2) {
+            background-image: url(./hsm-9-2.png);
+            opacity: 0; }
+          #scene .stage-inner .wrap .stage-words-end .edit:nth-child(3) {
+            background-image: url(./hsm-9-3.png);
+            opacity: 0; }
+        #scene .stage-inner .wrap .stage-words-end .icon {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          top: calc(50%);
+          left: calc(50% - 100px);
+          border-radius: 50%;
+          border: 10px brown dashed;
+          background-position: center;
+          background-size: cover;
+          background-image: url(./icon.jpg);
+          opacity: 0; }
+
+#scene .stage-inner .wrap {
+  animation: camera 2s 5.9s cubic-bezier(0.5, 0.5, 0.5, 1) forwards; }
+  #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-1 {
+    animation: leaf-down 1.2s 0.3s ease forwards, vanish 0.5s 2.3s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-2 {
+    animation: leaf-up 1.2s 0.4s ease forwards, vanish 0.5s 2.4s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-3 {
+    animation: leaf-down 1.2s 0.5s ease forwards, vanish 0.5s 2.5s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-4 {
+    animation: leaf-up 1.2s 0.6s ease forwards, vanish 0.5s 2.6s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-5 {
+    animation: leaf-down 1.2s 0.7s ease forwards, vanish 0.5s 2.7s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-0 .words-0 .words-0-6 {
+    animation: leaf-up 1.2s 0.8s ease forwards, vanish 0.5s 2.8s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-0 .words-0-back {
+    animation: slider 1.1s 0s cubic-bezier(0.05, 0.95, 0.95, 0.05) forwards, vanish 0.5s 0.8s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-1 {
+    animation: wordslide 0.2s 3.6s ease forwards, showup 0.2s 5.2s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-2 {
+    animation: wordslide 0.2s 3.7s ease forwards, showup 0.2s 5.15s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-3 {
+    animation: wordslide 0.2s 3.8s ease forwards, showup 0.2s 5.1s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-4 {
+    animation: wordslide 0.2s 3.9s ease forwards, showup 0.2s 5.05s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-5 {
+    animation: wordslide 0.2s 4s ease forwards, showup 0.2s 5s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-6 {
+    animation: wordslide 0.2s 4.1s ease forwards, showup 0.2s 4.95s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-7 {
+    animation: wordslide 0.2s 4.2s ease forwards, showup 0.2s 4.9s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-8 {
+    animation: wordslide 0.2s 4.3s ease forwards, showup 0.2s 4.85s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-9 {
+    animation: wordslide 0.2s 4.4s ease forwards, showup 0.2s 4.8s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-10 {
+    animation: wordslide 0.2s 4.5s ease forwards, showup 0.2s 4.75s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1 .words-1-11 {
+    animation: wordslide 0.2s 4.6s ease forwards, showup 0.2s 4.7s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1 .words-1-back {
+    animation: showupdot1 0.7s 5.3s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-1-after {
+    animation: fallfall 0.3s 8s ease forwards; }
+    #scene .stage-inner .wrap .stage-words-1-after div:nth-child(1) {
+      animation: bigbig 0.8s 8.3s ease forwards; }
+    #scene .stage-inner .wrap .stage-words-1-after div:nth-child(2) {
+      animation: bigbig 0.8s 8.6s ease forwards; }
+    #scene .stage-inner .wrap .stage-words-1-after div:nth-child(3) {
+      animation: bigbig 0.8s 8.9s ease forwards; }
+    #scene .stage-inner .wrap .stage-words-1-after div:nth-child(4) {
+      animation: bigbig 0.8s 9.2s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-11 {
+    animation: showup 0s 10s ease forwards; }
+    #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-1 {
+      animation: sway 0.2s 10.1s ease infinite; }
+    #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-2 {
+      animation: sway 0.2s 10.2s ease infinite; }
+    #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-3 {
+      animation: sway 0.2s 10.3s ease infinite; }
+    #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-4 {
+      animation: sway 0.2s 10.4s ease infinite; }
+    #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-5 {
+      animation: sway 0.2s 10.5s ease infinite; }
+    #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-6 {
+      animation: sway 0.2s 10.6s ease infinite; }
+    #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-7 {
+      animation: sway 0.2s 10.7s ease infinite; }
+    #scene .stage-inner .wrap .stage-words-11 .words-11 .words-11-8 {
+      animation: sway 0.2s 10.8s ease infinite; }
+    #scene .stage-inner .wrap .stage-words-11 .words-11-back {
+      animation: stepbigger 1s steps(2) 10s forwards; }
+  #scene .stage-inner .wrap .stage-words-11-after div:nth-child(1) {
+    animation: r-fall 0.3s 12s ease forwards; }
+  #scene .stage-inner .wrap .backslide-12 div:nth-child(1) {
+    animation: slide-to-left 0.5s 16s cubic-bezier(1, 0, 0, 1) forwards; }
+  #scene .stage-inner .wrap .backslide-12 div:nth-child(2) {
+    animation: slide-to-left 0.5s 16.5s cubic-bezier(1, 0, 0, 1) forwards; }
+  #scene .stage-inner .wrap .backslide-12 div:nth-child(3) {
+    animation: slide-to-left 0.5s 17s cubic-bezier(1, 0, 0, 1) forwards; }
+  #scene .stage-inner .wrap .backslide-13 div:nth-child(1) {
+    animation: slide-to-right 0.5s 16s cubic-bezier(1, 0, 0, 1) forwards; }
+  #scene .stage-inner .wrap .backslide-13 div:nth-child(2) {
+    animation: slide-to-right 0.5s 16.5s cubic-bezier(1, 0, 0, 1) forwards; }
+  #scene .stage-inner .wrap .backslide-13 div:nth-child(3) {
+    animation: slide-to-right 0.5s 17s cubic-bezier(1, 0, 0, 1) forwards; }
+  #scene .stage-inner .wrap .stage-words-12 {
+    animation: slideup 0.5s 14s cubic-bezier(1, 0, 0.4, 0.6) forwards, top 0.5s 15.5s cubic-bezier(1, 0, 0.4, 0.6) forwards; }
+    #scene .stage-inner .wrap .stage-words-12 .words-12 .words-12-1 {
+      animation: leaf-rightbottom 1.2s 12.5s ease forwards; }
+    #scene .stage-inner .wrap .stage-words-12 .words-12 .words-12-2 {
+      animation: leaf-lefttop 1.2s 12.5s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-13 {
+    animation: bottom 0.5s 15.5s cubic-bezier(1, 0, 0.4, 0.6) forwards; }
+    #scene .stage-inner .wrap .stage-words-13 .words-13 .words-13-1 {
+      animation: leaf-leftbottom 1.2s 14s ease forwards; }
+    #scene .stage-inner .wrap .stage-words-13 .words-13 .words-13-2 {
+      animation: leaf-righttop 1.2s 14s ease forwards; }
+  #scene .stage-inner .wrap .circle div {
+    animation: bigbig 0.6s 18s ease forwards; }
+  #scene .stage-inner .wrap .words-2 {
+    animation: showup 0.3s 18.7s ease forwards, vanish 0.3s 19s ease forwards; }
+  #scene .stage-inner .wrap .words-3 {
+    animation: showup 0.3s 19.3s ease forwards, vanish 0.3s 19.6s ease forwards; }
+  #scene .stage-inner .wrap .words-4 {
+    animation: showup 0.3s 19.6s ease forwards, vanish 0.3s 19.9s ease forwards; }
+  #scene .stage-inner .wrap .words-5 {
+    animation: showup 0.3s 20.1s ease forwards, vanish 0.3s 20.4s ease forwards; }
+  #scene .stage-inner .wrap .words-6 {
+    animation: showup 0.3s 20.7s ease forwards, vanish 0.3s 21s ease forwards; }
+  #scene .stage-inner .wrap .words-7 {
+    animation: showup 0.3s 21.3s ease forwards, vanish 0.3s 21.6s ease forwards; }
+  #scene .stage-inner .wrap .words-8 {
+    animation: showup 0.3s 21.9s ease forwards, vanish 0.3s 22.2s ease forwards; }
+  #scene .stage-inner .wrap .min {
+    animation: showup 0.3s 22.5s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-end .edit:nth-child(1) {
+    animation: showup 0s 23s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-end .edit:nth-child(2) {
+    animation: showup 0s 23.3s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-end .edit:nth-child(3) {
+    animation: showup 0s 23.6s ease forwards; }
+  #scene .stage-inner .wrap .stage-words-end .icon {
+    animation: showup 0s 23.75s ease forwards; }
+
+@keyframes vanish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@keyframes showup {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes showupdot1 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.1; } }
+@keyframes bigger {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(2); } }
+@keyframes fall-1 {
+  from {
+    transform: translateY(0%) rotate(0); }
+  to {
+    transform: translateY(100%) rotate(30deg); } }
+@keyframes slider {
+  from {
+    transform: translateX(0%); }
+  to {
+    transform: translateX(-300%); } }
+@keyframes camera {
+  from {
+    perspective: 100px; }
+  to {
+    perspective: 800px; } }
+@keyframes leaf-down {
+  from {
+    transform: translateY(-70vh) rotateY(0) rotateX(0);
+    opacity: 0; }
+  to {
+    transform: translateY(0vh) rotateY(360deg) rotateX(360deg);
+    opacity: 1; } }
+@keyframes leaf-up {
+  from {
+    transform: translateY(70vh) rotateY(0) rotateX(0);
+    opacity: 0; }
+  to {
+    transform: translateY(0vh) rotateY(360deg) rotateX(360deg);
+    opacity: 1; } }
+@keyframes leaf-rightbottom {
+  from {
+    transform: translate(70vh, 70vh) rotateY(0) rotateX(0);
+    opacity: 0; }
+  to {
+    transform: translate(0vh, 0vh) rotateY(360deg) rotateX(360deg);
+    opacity: 1; } }
+@keyframes leaf-lefttop {
+  from {
+    transform: translate(-70vh, -70vh) rotateY(0) rotateX(0);
+    opacity: 0; }
+  to {
+    transform: translate(0vh, 0vh) rotateY(360deg) rotateX(360deg);
+    opacity: 1; } }
+@keyframes leaf-leftbottom {
+  from {
+    transform: translate(-70vh, 70vh) rotateY(0) rotateX(0);
+    opacity: 0; }
+  to {
+    transform: translate(0vh, 0vh) rotateY(360deg) rotateX(360deg);
+    opacity: 1; } }
+@keyframes leaf-righttop {
+  from {
+    transform: translate(70vh, -70vh) rotateY(0) rotateX(0);
+    opacity: 0; }
+  to {
+    transform: translate(0vh, 0vh) rotateY(360deg) rotateX(360deg);
+    opacity: 1; } }
+@keyframes m-vanish {
+  from {
+    transform: scale(1);
+    opacity: 1; }
+  to {
+    transform: scale(0);
+    opacity: 0; } }
+@keyframes wordslide {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0; }
+  50% {
+    transform: translateY(-10%);
+    opacity: 1; }
+  100% {
+    transform: translateY(0%);
+    opacity: 0; } }
+@keyframes stepbigger {
+  0% {
+    transform: scale(0.35); }
+  100% {
+    transform: scale(1); } }
+@keyframes sway {
+  from {
+    transform: translate(3px, 3px); }
+  to {
+    transform: translate(-3px, -3px); } }
+@keyframes slideup {
+  from {
+    transform: translateY(0%); }
+  to {
+    transform: translateY(-100%); } }
+@keyframes top {
+  from {
+    transform: translateY(-100%); }
+  to {
+    transform: translateY(-25%); } }
+@keyframes bottom {
+  from {
+    transform: translateY(0%); }
+  to {
+    transform: translateY(25%); } }
+@keyframes slide-to-left {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(0%); } }
+@keyframes slide-to-right {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0%); } }
+@keyframes bigbig {
+  from {
+    transform: scale(1) rotate(0deg); }
+  to {
+    transform: scale(14) rotate(360deg); } }
+@keyframes fallfall {
+  from {
+    transform: translateY(-100%) rotate(0deg); }
+  to {
+    transform: translateY(0%) rotate(-360deg); } }
+@keyframes r-fall {
+  from {
+    transform: translateY(-100%);
+    border-radius: 50%; }
+  to {
+    transform: translateY(0%);
+    border-radius: 0%; } }
+
+/*# sourceMappingURL=scene.css.map */
