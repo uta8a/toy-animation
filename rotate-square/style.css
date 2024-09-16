@@ -1,0 +1,81 @@
+:root {
+    --sq-width: 30vw;
+    --sq-height: 30dvh;
+    --sq-hw: min(var(--sq-width), var(--sq-height));
+    --in-width: 28vw;
+    --in-height: 28dvh;
+    --in-hw: min(var(--in-width), var(--in-height));
+}
+
+html, body {
+    height: 100dvh;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+}
+
+.sq {
+    position: relative;
+    height: var(--sq-hw);
+    width: var(--sq-hw);
+    margin: 10px 10px;
+    /* top: calc(50% - var(--sq-hw) / 2);
+    left: calc(50% - var(--sq-hw) / 2); */
+    background-color: rgba(0, 0, 0, 0.1);
+    animation:
+        scaleup 0.5s cubic-bezier(0.19, 1, 0.22, 1) 2s forwards,
+        colorer 0.5s cubic-bezier(0.19, 1, 0.22, 1) 2s forwards,
+        rotate 0.3s cubic-bezier(0.19, 1, 0.22, 1) 2s forwards,
+        scaledown 1.3s ease-out 2.7s forwards;
+}
+
+.in {
+    position: relative;
+    height: var(--in-hw);
+    width: var(--in-hw);
+    top: calc(50% - var(--in-hw) / 2);
+    left: calc(50% - var(--in-hw) / 2);
+    background-color: white;
+    animation:
+        scaledown 0.5s cubic-bezier(0.19, 1, 0.22, 1) 2s forwards,
+        scaleup 1.3s ease-out 2.7s forwards;
+}
+
+@keyframes scaleup {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes scaledown {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+}
+
+@keyframes colorer {
+    from {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 1.0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
